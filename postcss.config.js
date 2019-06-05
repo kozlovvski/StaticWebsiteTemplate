@@ -5,7 +5,10 @@ module.exports = {
     require('autoprefixer'),
     purgecss({
       content: ['./**/*.html']
-    })
+    }),
+    require('cssnano')({
+      preset: 'default',
+    }),
   ],
   browsers: ['> 0.25%', 'ie >= 11']
 };
