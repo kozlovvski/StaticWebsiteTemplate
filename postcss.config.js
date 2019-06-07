@@ -4,7 +4,8 @@ module.exports = {
   plugins: [
     require('autoprefixer'),
     purgecss({
-      content: ['./**/*.html']
+      content: ['./**/*.html'],
+      whitelistPatterns: [/(--(\w|\-)+)$/]
     }),
     require('cssnano')({
       preset: 'default',
