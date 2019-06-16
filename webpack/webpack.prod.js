@@ -47,7 +47,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[hash].[ext]',
+              name: 'images/[contenthash].[ext]',
             },
           },
         ],
@@ -59,13 +59,13 @@ module.exports = {
       root: process.cwd()
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.[hash].css'
+      filename: 'style.[contenthash].css'
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      hash: true,
+      hash: false,
       template: './' + src_Path + '/index.html',
-      filename: 'index.[hash].html'
+      filename: 'index.html'
     })
   ]
 };
