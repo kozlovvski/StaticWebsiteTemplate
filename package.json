@@ -1,6 +1,6 @@
 {
   "name": "webpack-4-scss-boilerplate",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "My Webpack 4 boilerplate for static webpages built with SCSS and ES6+",
   "main": "index.js",
   "scripts": {
@@ -37,6 +37,7 @@
     "webpack-dev-server": "^3.7.0"
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "normalize.css": "^8.0.1"
   },
   "browsers": [
