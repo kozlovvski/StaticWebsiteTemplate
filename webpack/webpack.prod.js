@@ -10,6 +10,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // This plugin links all used files to index.html and outputs html files to /dist folder
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+// This plugin optimizes images
+const ImageminPlugin = require("imagemin-webpack");
+
 // This file stores production and source paths. You can change them in src/webpack/path.js if you want
 const { prod_Path, src_Path } = require("./path");
 
@@ -106,6 +109,29 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       minify: true
+    }),
+
+    // Image optimization settings
+    new ImageminPlugin({
+      bail: false, // Ignore errors on corrupted images
+      imageminOptions: {
+        // Before using imagemin plugins make sure you have added them in `package.json` (`devDependencies`) and installed them
+        plugins: [
+          ["gifsicle", { interlaced: true }],
+          ["mozjpeg", { quality: 80, progressive: true }],
+          ["pngquant", { strip: true }],
+          [
+            "svgo",
+            {
+              plugins: [
+                {
+                  removeViewBox: false
+                }
+              ]
+            }
+          ]
+        ]
+      }
     })
   ]
 };
