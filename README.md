@@ -4,7 +4,7 @@ This project is a Webpack 4 Boilerplate for creating static websites. Features i
 - Included [normalize.css](https://necolas.github.io/normalize.css/)
 - [PostCSS](https://github.com/postcss/postcss) support with installed [Autoprefixer](https://github.com/postcss/autoprefixer). No need to remember about vendor prefixes - they will be included for you. 
 - Automatic images optimization with [ImageMin](https://github.com/imagemin/imagemin). With use of [html-loader](https://github.com/webpack-contrib/html-loader) every `<img src="" />` or `<link href="" />` will be required and optimized.
-- [Babel] compiler support. Write ES6+ syntax like arrow function which will get transpiled to pre-ES6 syntax during build process
+- [Babel](https://github.com/babel/babel) compiler support. Write ES6+ syntax like arrow function which will get transpiled to pre-ES6 syntax during build process
 - GitHub Pages deployment with a single command
 
 ## Installation
