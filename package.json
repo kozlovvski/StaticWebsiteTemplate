@@ -1,6 +1,6 @@
 {
   "name": "webpack-4-scss-boilerplate",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "My Webpack 4 boilerplate for static webpages built with SCSS and ES6+",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
     "file-loader": "^3.0.1",
+    "gh-pages": "^2.1.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^4.0.0-beta.8",
     "imagemin-gifsicle": "^6.0.1",
@@ -37,7 +38,6 @@
     "webpack-dev-server": "^3.7.0"
   },
   "dependencies": {
-    "gh-pages": "^2.1.1",
     "normalize.css": "^8.0.1"
   },
   "browsers": [
