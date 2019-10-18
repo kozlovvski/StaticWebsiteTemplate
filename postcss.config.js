@@ -6,6 +6,5 @@ module.exports = {
     require("cssnano")({
       preset: "default"
     })
-  ],
-  browsers: ["> 0.25%", "ie >= 11"]
+  ]
 };
