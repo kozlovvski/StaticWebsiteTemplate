@@ -109,7 +109,7 @@ If you look into `webpack` directory, you will see `webpack.dev.js` and `webpack
 ```
 What Webpack will do is: find all files ending with `.html` (this is a simple regexp) and process it with defined loader. Currently it is a `html-loader`. `options` are settings for the loader. Right now it will try to import every `src` in `<img>` tags and every `href` in `<link>` tags (for example favicons).
 
-You don't need understand every line of code there - you will get that as you work more with Webpack. For now, just get a basic idea on how Webpack works.
+You don't need to understand every line of code there - you will get that as you work more with Webpack. For now, just get a basic idea on how Webpack works.
 
 ## Production building
 If you are done with developing your code in dev mode and would like to create optimized files to host somewhere, use:
