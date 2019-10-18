@@ -1,15 +1,11 @@
-const purgecss = require('@fullhuman/postcss-purgecss');
-
 module.exports = {
   plugins: [
-    require('autoprefixer'),
-    purgecss({
-      content: ['./**/*.html'],
-      whitelistPatterns: [/(--(\w|\-)+)$/]
-    }),
-    require('cssnano')({
-      preset: 'default',
-    }),
+    // Use autoprefixer to automatically add prefixes like "webkit" to CSS
+    require("autoprefixer"),
+    // Minify CSS file in production to make files smaller
+    require("cssnano")({
+      preset: "default"
+    })
   ],
-  browsers: ['> 0.25%', 'ie >= 11']
+  browsers: ["> 0.25%", "ie >= 11"]
 };
